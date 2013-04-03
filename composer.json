@@ -1,0 +1,24 @@
+{
+    "name":         "nyxis/google-map-bundle",
+    "version":      "1.0",
+    "description":  "Google map generator for Symfony 2",
+    "keywords":     ["google", "google map"],
+    "type":         "symfony-bundle",
+    "license":      "MIT",
+    "authors":     [
+        {
+            "name":     "Quentin Cerny",
+            "email":    "quentin.cerny@gmail.com",
+            "homepage": "https://github.com/QuentinCerny"
+        }
+    ],
+    "require":      {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.2.*",
+        "twig/extensions": "1.0.*"
+    },
+    "autoload": {
+        "psr-0": { "Nyxis\\GoogleMapBundle": "" }
+    },
+    "target-dir": "Nyxis/GoogleMapBundle"
+}

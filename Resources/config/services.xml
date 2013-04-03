@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="nyxis_google_map.map_builder.class">Nyxis\GoogleMapBundle\Map\MapBuilder</parameter>
+        <parameter key="nyxis_google_map.twig_extension.class">Nyxis\GoogleMapBundle\Twig\MapExtension</parameter>
+    </parameters>
+
+    <services>
+        <!-- Map builder -->
+        <service id="nyxis_google_map.map_builder" class="%nyxis_google_map.map_builder.class%">
+            <argument type="service" id="service_container" />
+        </service>
+        <service id="google_map_builder" alias="nyxis_google_map.map_builder" />
+
+        <!-- Twig Extension -->
+        <service id="nyxis_google_map.twig_extension" class="%nyxis_google_map.twig_extension.class%">
+            <tag name="twig.extension" />
+            <argument type="service" id="service_container" />
+        </service>
+
+    </services>
+
+</container>
