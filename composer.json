@@ -2,7 +2,7 @@
     "name":         "nyxis/google-map-bundle",
     "version":      "1.0",
     "description":  "Google map generator for Symfony 2",
-    "keywords":     ["google", "google map"],
+    "keywords":     ["google", "google map", "Symfony", "bundle"],
     "type":         "symfony-bundle",
     "license":      "MIT",
     "authors":     [
