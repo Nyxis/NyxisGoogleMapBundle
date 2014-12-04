@@ -88,7 +88,7 @@ class MapBuilder
      */
     protected function validateConfig($config)
     {
-        $neededConfigs = array('place', 'locale', 'zoom', 'charset', 'width', 'height', 'type', 'template');
+        $neededConfigs = array('place', 'locale', 'zoom', 'charset', 'width', 'height', 'type', 'template', 'container_id');
         $diff = array_diff_key(array_flip($neededConfigs), $config);
 
         if (!empty($diff)) {
